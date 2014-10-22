@@ -19,10 +19,6 @@
     header("Location: login.php");
   }
   
-   echo "<div id='manageVesselTitle'>";
-  require($abtermcalls . "/abtermcallmenu.php");
-  echo "</div>";
-  
   echo "<div id='graphDisplayBox6'>";
   require($abtermcalls . "/abtermcallresult.php");
   echo "</div>";
