@@ -12,13 +12,6 @@
     header("Location: mainmenu.php");
   }
   
-  if(isset($_POST['Logout']))
-  {
-    //echo 'unset';
-    unset($_SESSION['userDetails']);
-    header("Location: login.php");
-  }
-  
   echo "<div id='graphDisplayBox6'>";
   require($abtermcalls . "/abtermcallresult.php");
   echo "</div>";
