@@ -12,6 +12,13 @@
     header("Location: mainmenu.php");
   }
   
+  if(isset($_POST['Logout']))
+  {
+    //echo 'unset';
+    unset($_SESSION['userDetails']);
+    header("Location: login.php");
+  }
+  
    echo "<div id='manageVesselTitle'>";
   require($abtermcalls . "/abtermcallmenu.php");
   echo "</div>";
